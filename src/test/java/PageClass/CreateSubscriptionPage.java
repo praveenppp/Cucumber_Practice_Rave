@@ -12,8 +12,8 @@ import com.relevantcodes.extentreports.LogStatus;
 import UtilityClass.ReportsUtility;
    
 public class CreateSubscriptionPage
-{    
-private ExtentTest test ;
+{     
+private ExtentTest test ;      
 public WebDriver driver;
 private By SubscriptionsTab = By.xpath("//span[text()='Subscriptions']");
 private By addSubscriptionButton = By.xpath("//span[text()=' Add Subscription']");
