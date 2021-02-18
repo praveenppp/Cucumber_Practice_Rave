@@ -10,9 +10,9 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 import UtilityClass.ReportsUtility;
-
+   
 public class CreateSubscriptionPage
-{
+{    
 private ExtentTest test ;
 public WebDriver driver;
 private By SubscriptionsTab = By.xpath("//span[text()='Subscriptions']");
