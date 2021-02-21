@@ -5,7 +5,7 @@
   <groupId>Cucumber_Selenium</groupId>
   <artifactId>Cucumber_Selenium</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>war</packaging>
+  <packaging>jar</packaging>
 
   <name>Cucumber_Selenium</name>
   <url>http://maven.apache.org</url>
