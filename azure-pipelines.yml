@@ -22,8 +22,10 @@ steps:
     goals: 'package'
 - task: CopyFiles@2
   inputs:
-    sourceFolder: $(Build.SourcesDirectory)
-    targetFolder: $(Build.ArtifactStagingDirectory)
+    SourceFolder: '$(build.artifactstagingdirectory)'
+    Contents: '!**/*.jar'
+    TargetFolder: '$(build.artifactstagingdirectory)/test'
+
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
