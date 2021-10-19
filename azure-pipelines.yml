@@ -22,14 +22,12 @@ steps:
     goals: 'package'
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '$(build.artifactstagingdirectory)'
-    Contents: '!**/*.jar'
-    TargetFolder: '$(build.artifactstagingdirectory)/test'
-
+    Contents: '**/.war'
+    TargetFolder: '$(build.artifactstagingdirectory)'
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'LogicApp War File'
+    ArtifactName: 'drop'
     publishLocation: 'Container'
 
 
